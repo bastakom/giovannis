@@ -1,27 +1,143 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Lägg till detta i din globals.scss eller CSS-fil */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  background-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.work-sans-unique-bold {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.work-sans-unique-normal {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.stadax {
+  width: 180px;
+  height: 60px;
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.arrow {
+  height: fit-content;
+  transform: rotate(89deg);
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 224px;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.bg-green {
+  background-color: #00755d;
+}
+h1 {
+  font-size: 22px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.link {
+  margin-top: 24px;
+  color: #00755d;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.giovannis {
+  width: 240px;
+  height: 128px;
+}
+
+.contentWrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60vw;
+    flex-grow: 1;
+    height: auto;
+  }
+  .contentWrapper {
+    margin-top: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 782px;
+    height: 52px;
+  }
+
+  .stadax {
+    width: 250px;
+    height: 85px;
+  }
+  h1 {
+    padding: 0rem;
+  }
+
+  .box {
+    width: 367px;
+    height: 367px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .arrow {
+    transform: rotate(0deg);
+  }
+
+  .giovannis {
+    width: 303px;
+    height: 163px;
+  }
 }
