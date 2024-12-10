@@ -36,7 +36,7 @@ export default function Home() {
       <div className="contentWrapper">
         <h1 className="work-sans-unique-bold">
           Hej! Giovanni’s har gått och blivit Städax. Kom ett steg närmare
-          skinande rena fönster putsade med gott samvete.
+          skinande rena fönster, putsade med gott samvete.
         </h1>
         <Link
           className="link"
